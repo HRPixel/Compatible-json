@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Default Dark+", // 主题设置为默认深色主题
+    "C_Cpp.default.compilerPath": "D:/msys64/ucrt64/bin/gcc.exe", // 默认编译器路径
+    "C_Cpp.default.intelliSenseMode": "gcc-x64", // 智能感知模式设置为 gcc-x64
+    "C_Cpp.default.cppStandard": "c++17", // 默认 C++ 标准设置为 C++17
+    "C_Cpp.default.cStandard": "c11", // 默认 C 标准设置为 C11
+    "editor.formatOnSave": true, // 保存时自动格式化
+    "editor.formatOnPaste": true, // 粘贴时自动格式化
+    "editor.formatOnType": true, // 输入时自动格式化
+    "files.autoSave": "onFocusChange", // 自动保存文件，当焦点离开编辑器时保存
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace", // 设置字体
+    "editor.fontWeight": "normal", // 字体粗细
+    "editor.fontSize": 14, // 字体大小
+    "editor.lineHeight": 22, // 行高 
+    "editor.tabSize": 4, // Tab 大小为 4 个空格
+    "editor.detectIndentation": false // 禁用自动检测缩进
+} // 这是 VSCode 的设置文件，配置了主题、编译器路径、代码格式化等选项。

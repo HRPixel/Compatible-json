@@ -1,0 +1,71 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0", // 配置版本
+    "configurations": [
+        // 调试当前打开的Python文件的配置
+        {
+            "name": "Python 调试程序: 当前文件", // 配置名称，可自定义 
+            "type": "debugpy", // 调试器类型，这里使用 debugpy
+            "request": "launch", // 请求类型，这里是启动调试
+            "program": "${file}", // 要调试的程序，这里是当前打开的文件
+            "cwd": "${workspaceFolder}", // 当前工作目录，这里是工作区文件夹
+            "console": "externalTerminal", // 使用外部终端进行输入输出
+            // "console": "integratedTerminal",  // 使用集成终端进行输入输出
+            // "justMyCode": true  // 仅调试用户代码，忽略库代码
+        },
+        // 调试整个项目的配置
+        {
+            "name": "Python 调试程序: 调试整个项目", // 配置名称，可自定义
+            "type": "debugpy", // 调试器类型，这里使用 debugpy
+            "request": "launch", // 请求类型，这里是启动调试
+            // 1. 指定项目入口文件（绝对路径\\相对路径）
+            "program": "${workspaceFolder}\\src\\main.py",
+            // 2. 调试时的工作目录（设为项目根目录）
+            "cwd": "${workspaceFolder}",
+            // 3. 添加项目根目录到Python路径
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            // "module": "src.main",
+            // 4. 选择调试时使用的终端类型
+            "console": "externalTerminal", // 使用外部终端进行输入输出
+            // "console": "integratedTerminal", //  使用集成终端进行输入输出
+            // 5. 仅调试用户代码，忽略库代码
+            // "justMyCode": true, // 仅调试用户代码，忽略库代码
+            // 6. 可选：传递给程序的命令行参数
+            // "args": [
+            //     "--mode",
+            //     "debug",
+            //     "--data--path",
+            //     "src\\config"
+            // ],
+            // 7. 可选：指定Python解释器路径
+            // "python": "D:\\anaconda3\\python.exe"
+            // 8. 可选：设置断点条件
+            // "breakpoints": {
+            //     "exception": {
+            //         "all": "uncaught"
+            //     }
+            // }
+        },
+        // 调试Python文件并传递参数的配置
+        {
+            "name": "Python 调试程序: 包含参数的当前文件", // 配置名称，可自定义
+            "type": "debugpy", // 调试器类型，这里使用 debugpy
+            "request": "launch", // 请求类型，这里是启动调试
+            "program": "${file}", // 要调试的程序，这里是当前打开的文件
+            "cwd": "${workspaceFolder}", // 当前工作目录，这里是工作区文件夹
+            "console": "externalTerminal", // 使用外部终端进行输入输出
+            // "console": "integratedTerminal",  // 使用集成终端进行输入输出
+            "args": [
+                "${command:pickArgs}",
+                "--input",
+                "test.txt",
+                "--output",
+                "result.txt"
+            ] // 传递参数给程序
+        },
+    ]
+}
