@@ -1,2 +1,2 @@
 # Compatible-json
-VSCode项目兼容调试配置文件
+用于c++和python项目的VSCode配置(.json)文件。
